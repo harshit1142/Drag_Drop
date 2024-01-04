@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import classes from './Main.module.css'
 import Text from './Text';
 import { useDispatch } from 'react-redux';
@@ -10,6 +10,9 @@ export default function Main() {
    const dispatch=useDispatch();
   const widgets = useSelector(state => state.widget);
 
+
+   
+  
   function handleOnDrop(e){
    const widgetType=e.dataTransfer.getData("widgetType");
    dispatch(addWid(widgetType));
@@ -25,10 +28,10 @@ export default function Main() {
   useEffect(()=>{
     if(localStorage.getItem("widget"))
     {
-      const stored=JSON.parse(localStorage.getItem("widget"));  
+      const stored =(JSON.parse(localStorage.getItem("widget")));  
       dispatch(setWid(stored));
     }
-  },[])
+  },[dispatch])
 
   return (
     <div className={classes.container}>
