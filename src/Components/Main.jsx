@@ -40,7 +40,7 @@ export default function Main() {
         <div className={classes.box_bottom} onDrop={handleOnDrop} onDragOver={handleDragOver}>
            {widgets.length>0 && widgets.map((widget,index)=>{
             return ( 
-              ((widget.name) === ("./img.jpg") || (widget.name.indexOf("blob:http://localhost:3000")!==-1))? 
+              ((widget.name) === ("./img.jpg") || (widget.name.indexOf("blob:")!==-1))? 
                <Image widget={widget} key={widget.id}/>
                 :
                <Text widget={widget.name} id={widget.id} key={widget.id}/>
