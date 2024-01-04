@@ -1,0 +1,80 @@
+.container{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(35deg, rgb(201, 201, 96), rgb(68, 100, 154));
+    /* background: linear-gradient(320deg,rgb(79, 8, 90),rgb(128, 77, 78)); */
+    color: wheat;
+    padding: 8px;
+    padding-top: 30px;
+}
+.box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.box_top{
+   display: flex;
+   justify-content: flex-end;
+}
+.button {
+    font-size: 24px;
+    width: 90px;
+    height: 40px;
+    cursor: pointer;
+}
+.buttonSmall{
+    width: 50px;
+    font-size: 20px;
+    margin-left: 5px;
+    border-radius: 12%;
+    background-color: lightgreen;
+    cursor: pointer;
+}
+.box_bottom{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    border: 3px solid rgb(0, 0, 0);
+    min-height: 100vh;
+    height: auto;
+    color: white
+    
+}
+.text {
+    font-size: 28px;
+    padding-bottom: 8px;
+    text-align: center;
+    background: linear-gradient(650deg, rgb(16, 5, 40), rgb(129, 7, 27));
+}
+img {
+    width: 250px;
+    height: 200px;
+}
+
+.image {
+    overflow: hidden;
+    margin-top: 5px;
+    height: 200px;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+.textBox{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        background: linear-gradient(650deg, rgb(16, 5, 40), rgb(129, 7, 27));
+        margin-top: 5px;
+        padding-bottom: 20px;  
+}
+.ImageBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        margin-top: 5px;
+        background: linear-gradient(650deg,rgb(16, 5, 40),rgb(129, 7, 27));
+}
