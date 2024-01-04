@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import classes from './Main.module.css'
 import Text from './Text';
 import { useDispatch } from 'react-redux';
@@ -9,9 +9,6 @@ import Image from './Image';
 export default function Main() {
    const dispatch=useDispatch();
   const widgets = useSelector(state => state.widget);
-
-
-   
   
   function handleOnDrop(e){
    const widgetType=e.dataTransfer.getData("widgetType");
