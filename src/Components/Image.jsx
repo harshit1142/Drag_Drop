@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import classes from './Main.module.css'
-import { useDispatch,useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { addWid, removeWid } from '../Redux/widgetSlice';
 
 export default function Image({widget}) {
@@ -12,8 +12,7 @@ export default function Image({widget}) {
     if (event.target.files && event.target.files[0]) {
       let newImage = event.target.files[0];
        const urlImg= (URL.createObjectURL(newImage));
-       console.log(urlImg);
-
+      setImage(urlImg);
        dispatch(addWid((urlImg)));
        dispatch(removeWid(widget.id));
     }
@@ -21,7 +20,7 @@ export default function Image({widget}) {
 
   return (
     <div className={classes.ImageBox}>
-          <div className={classes.image} > <img src={img} alt="/image"  /> </div> 
+          <div className={classes.image} > <img src={img} alt="pic"  /> </div> 
           <input type="file" name="myImage" accept="image/*" onChange={onImageChange} />
     </div>
   )

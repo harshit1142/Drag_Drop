@@ -19,7 +19,7 @@ export const widgetSlice=createSlice({
              state.widget.push(wid);
         },
         removeWid:(state,action)=>{
-            state.widget=state.widget.filter((wid)=>wid.id != action.payload)
+            state.widget=state.widget.filter((wid)=>wid.id !== action.payload)
         }
     }
 })

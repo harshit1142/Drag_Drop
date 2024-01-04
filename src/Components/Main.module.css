@@ -2,7 +2,6 @@
     width: 100%;
     height: auto;
     background: linear-gradient(35deg, rgb(201, 201, 96), rgb(68, 100, 154));
-    /* background: linear-gradient(320deg,rgb(79, 8, 90),rgb(128, 77, 78)); */
     color: wheat;
     padding: 8px;
     padding-top: 30px;
@@ -59,7 +58,6 @@ img {
     margin-top: 5px;
     height: 200px;
     width: 100%;
-    /* border: 2px solid red; */
 }
 .textBox{
         width: 100%;

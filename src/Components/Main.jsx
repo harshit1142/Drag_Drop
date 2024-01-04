@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import classes from './Main.module.css'
 import Text from './Text';
 import { useDispatch } from 'react-redux';
